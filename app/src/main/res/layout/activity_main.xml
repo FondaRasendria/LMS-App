@@ -1,18 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frame"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:src="@drawable/foto"
+        android:layout_centerHorizontal="true" />
 
     <TextView
+        android:id="@+id/jdl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang!!"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/foto"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para Pengajar"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/jdl"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/usn"
+        android:layout_below="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pop_med"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbox"
+        android:layout_below="@+id/usn"
+        android:height="40dp"
+        android:hint="@string/username"
+        android:fontFamily="@font/pop_reg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/pw"
+        android:layout_below="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/pop_med"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbox"
+        android:layout_below="@+id/pw"
+        android:height="40dp"
+        android:hint="Password"
+        android:fontFamily="@font/pop_reg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnlog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Masuk"
+        android:layout_below="@+id/password"
+        android:backgroundTint="@color/btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_below="@id/btnlog"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</ScrollView>
