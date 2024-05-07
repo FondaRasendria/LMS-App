@@ -26,16 +26,17 @@
         android:src="@drawable/foto"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/jdl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Selamat Datang!!"
-        android:textSize="35dp"
-        android:textColor="@color/white"
-        android:layout_below="@+id/foto"
-        android:fontFamily="@font/poppins"
-        android:layout_marginLeft="30dp"/>
+        <TextView
+            android:id="@+id/jdl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foto"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Selamat Datang!!"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
 
         <TextView
             android:layout_width="match_parent"

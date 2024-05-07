@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "368454109675",
+    "project_id": "studygo-3d832",
+    "storage_bucket": "studygo-3d832.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368454109675:android:ebd53341f89d50c71f31ae",
+        "android_client_info": {
+          "package_name": "com.studygo.studygo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl88OTyNDuWxiZ4qEIve_5widF4kAPUmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
