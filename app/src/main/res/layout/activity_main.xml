@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,77 +8,64 @@
     tools:context=".MainActivity"
     android:background="@color/bg">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/frame"
+        android:src="@drawable/log"
         android:scaleType="fitXY"/>
 
     <ImageView
-        android:id="@+id/foto"
-        android:layout_width="350dp"
-        android:layout_height="300dp"
-        android:src="@drawable/foto"
-        android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:id="@+id/jdl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/foto"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="-3dp"
-            android:fontFamily="@font/poppins"
-            android:text="Selamat Datang!!"
-            android:textColor="@color/white"
-            android:textSize="35dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Para Pengajar"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:layout_below="@+id/jdl"
-            android:fontFamily="@font/poppins"
-            android:layout_marginLeft="30dp"/>
-
-    <TextView
-        android:id="@+id/usn"
-        android:layout_below="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="20dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/log_contain"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@id/lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="@font/poppins"
+        android:textSize="20sp"
         android:textColor="@color/black"
-        android:fontFamily="@font/pop_med"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"/>
+
+    <TextView
+        android:id="@+id/eml"
+        android:layout_below="@+id/lg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pop_med" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/textbox"
-        android:layout_below="@+id/usn"
+        android:layout_below="@+id/eml"
         android:height="40dp"
-        android:hint="@string/username"
+        android:hint="Email"
         android:fontFamily="@font/pop_reg"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:gravity="center"/>
     <TextView
         android:id="@+id/pw"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password"
         android:textSize="20dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/pop_med"
         android:textColor="@color/black"/>
 
@@ -103,14 +90,39 @@
         android:layout_below="@+id/password"
         android:backgroundTint="@color/btn"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/acc"
+        android:layout_below="@id/btnlog"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an Account?"
+        android:fontFamily="@font/pop_reg"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/to_regis"
+        android:layout_below="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:gravity="center"/>
 
     <ImageView
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/to_regis"
         android:src="@drawable/logo"
-        android:layout_below="@id/btnlog"
-        android:layout_centerInParent="true"/>
-    </RelativeLayout>
+        android:layout_centerHorizontal="true"/>
 
-</ScrollView>
+
+</RelativeLayout>

@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfilePage">
+    tools:context=".ProfilePage"
+    android:background="@color/bg">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:backgroundTint="@color/bg"
+        android:tint="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:fontFamily="@font/poppins"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="150dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/foto"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nadiem Marakim"
+        android:fontFamily="@font/pop_smbold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_below="@+id/profile"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wali Kelas XI.2"
+        android:fontFamily="@font/pop_med"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/nama"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn"
+        android:layout_below="@id/kelas"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:fontFamily="@font/pop_smbold"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:textAllCaps="false"/>
+
+
+
+
+</RelativeLayout>

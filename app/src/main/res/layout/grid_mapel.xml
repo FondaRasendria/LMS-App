@@ -19,7 +19,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/gridsepatu"
+                android:id="@+id/fotomapel"
                 android:src="@drawable/foto"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"/>
@@ -27,23 +27,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/gridsepatu"
+                android:layout_below="@+id/fotomapel"
                 android:orientation="vertical"
                 android:padding="8dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/mapel"
-                    android:textSize="15sp"
+                    android:textSize="16sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:text="Mata Pelajaran"/>
+                    android:text="Mata Pelajaran"
+                    android:fontFamily="@font/pop_smbold"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/kelas"
-                    android:textSize="13dp"
-                    android:text="Kelas"/>
+                    android:textSize="12dp"
+                    android:text="Kelas"
+                    android:fontFamily="@font/pop_reg"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
 

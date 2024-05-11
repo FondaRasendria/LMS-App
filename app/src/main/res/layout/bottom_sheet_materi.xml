@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/jdl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul Materi atau Tugas"
+        android:fontFamily="@font/pop_smbold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/namamateri"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Isikan Judul Materi"
+        android:gravity="center"
+        android:background="@drawable/textbox"
+        android:layout_below="@+id/jdl"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/ds"
+        android:layout_below="@id/namamateri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:fontFamily="@font/pop_smbold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/desk"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Isikan Deskripsi"
+        android:gravity="center"
+        android:background="@drawable/textbox"
+        android:layout_below="@+id/ds"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/upl"
+        android:layout_below="@+id/desk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Materi"
+        android:fontFamily="@font/pop_smbold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_below="@+id/upl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn"
+        android:layout_centerInParent="true"
+        android:text="Upload Materi"/>
+
+
+
+
+
+</RelativeLayout>

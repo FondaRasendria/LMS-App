@@ -14,7 +14,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/mapelbox">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -32,15 +33,16 @@
                 android:padding="10dp"
                 android:layout_centerVertical="true">
                 <TextView
+                    android:id="@+id/namabab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/bab"
                     android:textSize="18sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:text="Aritmatika"
                     android:fontFamily="@font/pop_smbold"/>
 
                 <TextView
+                    android:id="@+id/no_bab"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="12sp"
