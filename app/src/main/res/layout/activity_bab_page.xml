@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BabPage"
+    android:background="@color/bg">
+
+    <ImageView
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bab"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:backgroundTint="@color/btn"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namabab"
+        android:layout_toRightOf="@+id/back"
+        android:textSize="30sp"
+        android:text=""
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapel"
+        android:layout_below="@+id/namabab"
+        android:textSize="18sp"
+        android:text=""
+        android:textColor="@color/white"
+        android:fontFamily="@font/pop_med"
+        android:layout_toRightOf="@+id/back"/>
+
+    <TextView
+        android:id="@+id/kelas"
+        android:layout_toRightOf="@+id/mapel"
+        android:layout_below="@id/namabab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/pop_med"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/no_bab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BAB 1"
+        android:fontFamily="@font/pop_smbold"
+        android:layout_below="@+id/atas"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"/>
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/bg"
+        android:layout_below="@id/atas"
+        app:tint="@color/card"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:clickable="false"
+        android:visibility="invisible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMateri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_bab"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/grid_materi"/>
+
+
+</RelativeLayout>
