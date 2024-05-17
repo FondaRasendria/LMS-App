@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back"
         android:backgroundTint="@color/bg"
-        android:tint="@color/black"
+        app:tint="@color/black"
         android:layout_marginTop="20dp"/>
 
     <TextView
@@ -45,7 +45,6 @@
         android:id="@+id/nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nadiem Marakim"
         android:fontFamily="@font/pop_smbold"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -57,7 +56,6 @@
         android:id="@+id/kelas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wali Kelas XI.2"
         android:fontFamily="@font/pop_med"
         android:textColor="@color/black"
         android:textSize="20sp"

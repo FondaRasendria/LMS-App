@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/bg">
 
     <TextView
@@ -13,7 +13,8 @@
         android:fontFamily="@font/pop_smbold"
         android:textSize="22sp"
         android:textColor="@color/black"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/namabab"
@@ -24,7 +25,8 @@
         android:background="@drawable/textbox"
         android:layout_below="@+id/jdl"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginRight="15dp"
+        android:maxLines="1"/>
 
     <TextView
         android:id="@+id/nb"
@@ -46,9 +48,12 @@
         android:background="@drawable/textbox"
         android:layout_below="@+id/nb"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginRight="15dp"
+        android:inputType="number"
+        android:maxLines="1"/>
 
     <Button
+        android:id="@+id/tambahBab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/btn"
@@ -58,6 +63,7 @@
         android:layout_below="@id/no_bab"
         android:layout_centerInParent="true"
         android:layout_marginTop="15dp"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:layout_marginBottom="12dp"/>
 
 </RelativeLayout>

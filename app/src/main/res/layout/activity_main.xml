@@ -48,15 +48,15 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:background="@drawable/textbox"
         android:layout_below="@+id/eml"
-        android:height="40dp"
+        android:layout_height="40dp"
         android:hint="Email"
         android:fontFamily="@font/pop_reg"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:maxLines="1"/>
     <TextView
         android:id="@+id/pw"
         android:layout_below="@+id/email"
@@ -72,15 +72,16 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="@drawable/textbox"
         android:layout_below="@+id/pw"
-        android:height="40dp"
         android:hint="Password"
         android:fontFamily="@font/pop_reg"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:maxLines="1"/>
 
     <Button
         android:id="@+id/btnlog"

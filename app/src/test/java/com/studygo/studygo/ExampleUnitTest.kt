@@ -1,4 +1,4 @@
-package com.example.studygo
+package com.studygo.studygo
 
 import org.junit.Test
 

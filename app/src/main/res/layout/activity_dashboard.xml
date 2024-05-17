@@ -26,7 +26,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
-        android:tint="@color/btn"/>
+        app:tint="@color/btn"/>
 
 
     <androidx.cardview.widget.CardView
@@ -47,7 +47,6 @@
                 android:id="@+id/smngt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Semangat Mendidik"
                 android:textColor="@color/white"
                 android:layout_marginLeft="25dp"
                 android:fontFamily="@font/pop_smbold"
@@ -58,7 +57,6 @@
                 android:id="@+id/nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nadiem Makarim"
                 android:layout_below="@+id/smngt"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppins"
@@ -70,7 +68,6 @@
                 android:id="@+id/kelas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Wali kelas XI 2"
                 android:layout_below="@+id/nama"
                 android:fontFamily="@font/pop_med"
                 android:textSize="15dp"
@@ -83,6 +80,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/mtpl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mata Pelajaran"
@@ -91,6 +89,14 @@
         android:textColor="@color/black"
         android:fontFamily="@font/pop_smbold"
         android:layout_marginLeft="35dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleMapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mtpl"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/grid_mapel" />
 
 
 </RelativeLayout>

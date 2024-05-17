@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapelPage"
+    tools:context=".MateriPage"
     android:background="@color/bg">
 
     <ImageView
@@ -35,23 +35,23 @@
         android:layout_toRightOf="@+id/back"/>
 
     <TextView
-        android:id="@+id/kelas"
+        android:id="@+id/nomorbab"
         android:layout_below="@id/mapel"
         android:layout_toRightOf="@id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="Bab"
         android:fontFamily="@font/pop_med"
         android:textSize="18dp"
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/nama"
-        android:layout_below="@+id/kelas"
+        android:id="@+id/namabab"
+        android:layout_below="@+id/nomorbab"
         android:layout_toRightOf="@id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="Nama Bab"
         android:fontFamily="@font/pop_smbold"
         android:textSize="18dp"
         android:textColor="@color/white"
@@ -67,75 +67,36 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/semester"
+                android:id="@+id/judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Semester 1"
+                android:text=""
                 android:textSize="22dp"
                 android:fontFamily="@font/pop_smbold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="12dp"/>
-
-            <ImageButton
-                android:id="@+id/add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_add"
-                android:backgroundTint="@color/bg"
-                app:tint="@color/card"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="10dp"
-                android:clickable="false"
-                android:visibility="invisible"/>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerBab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/semester"
-                android:layout_marginHorizontal="25dp"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/grid_bab"/>
 
             <TextView
-                android:id="@+id/semester2"
-                android:layout_below="@+id/recyclerBab"
-                android:layout_width="wrap_content"
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Semester 2"
-                android:textSize="22dp"
-                android:fontFamily="@font/pop_smbold"
+                android:fontFamily="@font/pop_reg"
                 android:textColor="@color/black"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="12dp"/>
-
-            <ImageButton
-                android:id="@+id/add2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/recyclerBab"
-                android:src="@drawable/ic_add"
-                android:backgroundTint="@color/bg"
-                app:tint="@color/card"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="10dp"
-                android:clickable="false"
-                android:visibility="invisible"/>
+                android:layout_below="@id/judul"
+                android:text=""
+                android:textSize="20dp"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerBab2"
-                android:layout_width="wrap_content"
+                android:id="@+id/recyclerShowFile"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/semester2"
-                android:layout_marginHorizontal="25dp"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/grid_bab"/>
-
+                android:layout_below="@id/deskripsi"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/grid_file"
+                android:layout_marginHorizontal="25dp"/>
         </RelativeLayout>
-
     </ScrollView>
 
 </RelativeLayout>
